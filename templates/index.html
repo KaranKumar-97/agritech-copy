@@ -1,0 +1,392 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+
+<!-- Hero Section with Animated Background -->
+<div class="hero-section"
+    style="background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/5980/food-sunset-love-field.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-size: cover; background-position: center; height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden;">
+    <div class="animated-bg"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(45deg, #0466c866, #0466c833, #079c8833); background-size: 400% 400%; animation: gradientBG 15s ease infinite;">
+    </div>
+    <div class="container position-relative">
+        <div class="hero-content" style="max-width: 1200px; margin: 0 auto; text-align: center; color: white;">
+            <h1
+                style="font-size: 4rem; font-weight: 800; margin-bottom: 1.5rem; font-family: 'Poppins', sans-serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+                AgriTech: Advanced Farming with Machine Learning
+            </h1>
+            <p
+                style="font-size: 1.5rem; margin-bottom: 2rem; font-family: 'Open Sans', sans-serif; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+                Transform Your Agriculture with AI-Powered Insights
+            </p>
+            <div class="hero-buttons" style="display: flex; gap: 20px; justify-content: center;">
+                <a href="#predictions" class="cta-button"
+                    style="display: inline-block; padding: 1.2rem 2.8rem; background: linear-gradient(135deg, #2e7d32, #388e3c); color: white; text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(6,182,212,0.3);">Get
+                    Started</a>
+                <a href="#about" class="cta-button-secondary"
+                    style="display: inline-block; padding: 1.2rem 2.8rem; background: transparent; color: white; text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s ease; border: 2px solid white;">Learn
+                    More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stats Section -->
+<section style="margin-top: -100px; position: relative; z-index: 2;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="stat-card"
+                    style="background: white; padding: 2rem; border-radius: 20px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transform: translateY(0); transition: transform 0.3s ease;">
+                    <div
+                        style="width: 70px; height: 70px; margin: 0 auto 1rem; background: linear-gradient(135deg, #2e7d32, #388e3c); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3 style="color: #0f172a; font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;">98%</h3>
+                    <p style="color: #64748b; margin: 0;">Prediction Accuracy</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="stat-card"
+                    style="background: white; padding: 2rem; border-radius: 20px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transform: translateY(0); transition: transform 0.3s ease;">
+                    <div
+                        style="width: 70px; height: 70px; margin: 0 auto 1rem; background: linear-gradient(135deg, #2e7d32, #388e3c); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                       <!-- Central node -->
+                       <circle cx="12" cy="12" r="2"></circle>
+                       
+                       <!-- Outer nodes -->
+                       <circle cx="5" cy="5" r="2"></circle>
+                       <circle cx="19" cy="5" r="2"></circle>
+                       <circle cx="5" cy="19" r="2"></circle>
+                       <circle cx="19" cy="19" r="2"></circle>
+                       
+                       <!-- Connecting lines -->
+                       <line x1="12" y1="12" x2="5" y2="5"></line>
+                       <line x1="12" y1="12" x2="19" y2="5"></line>
+                       <line x1="12" y1="12" x2="5" y2="19"></line>
+                       <line x1="12" y1="12" x2="19" y2="19"></line>
+                       <line x1="5" y1="5" x2="19" y2="5"></line>
+                       <line x1="5" y1="19" x2="19" y2="19"></line>
+                   </svg>
+                   
+                    </div>
+                    <h3 style="color: #0f172a; font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;">3</h3>
+                    <p style="color: #64748b; margin: 0;">ML Models</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="stat-card"
+                    style="background: white; padding: 2rem; border-radius: 20px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transform: translateY(0); transition: transform 0.3s ease;">
+                    <div
+                        style="width: 70px; height: 70px; margin: 0 auto 1rem; background: linear-gradient(135deg, #2e7d32, #388e3c); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a10 10 0 1 0 10 10H12V2z" />
+                            <path d="M12 2a10 10 0 1 1-10 10h10V2z" />
+                        </svg>
+                    </div>
+                    <h3 style="color: #0f172a; font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;"> 87K+</h3>
+                    <p style="color: #64748b; margin: 0;">Trained on Crop Varieties</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section with Vector Graphics -->
+<section id="about" style="padding: 8rem 0; background: linear-gradient(135deg, #f8fafc, #f1f5f9);">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-content" style="padding-right: 3rem;">
+                    <h2
+                        style="color: #0f172a; font-size: 3rem; font-weight: 700; margin-bottom: 2rem; font-family: 'Poppins', sans-serif;">
+                        Revolutionizing Agriculture with AI
+                    </h2>
+                    <p
+                        style="color: #475569; font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; font-family: 'Open Sans', sans-serif;">
+                        Our platform leverages advanced machine learning algorithms and IoT sensors to provide precise,
+                        data-driven recommendations for optimal farming practices. We help farmers make informed
+                        decisions about crop selection, fertilizer usage, and disease management.
+                    </p>
+                    <div class="feature-list">
+                        <div class="feature-item" style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <div
+                                style="width: 40px; height: 40px; background: linear-gradient(135deg, #2e7d32, #388e3c); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                            </div>
+                            <span style="color: #475569;">Recommendation and Analysis System</span>
+                        </div>
+                        <div class="feature-item" style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <div
+                                style="width: 40px; height: 40px; background: linear-gradient(135deg, #2e7d32, #388e3c); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <path
+                                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span style="color: #475569;">Precision Recommendations</span>
+                        </div>
+                        <div class="feature-item" style="display: flex; align-items: center;">
+                            <div
+                                style="width: 40px; height: 40px; background: linear-gradient(135deg, #2e7d32, #388e3c); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                                    <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                                </svg>
+                            </div>
+                            <span style="color: #475569;">Data-Driven Insights</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-image" style="position: relative;">
+                    <img src="{{ url_for('static', filename='images/3.jpeg') }}" alt="Smart Farming"
+                        style="width: 100%; height: auto; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                    <div class="floating-card"
+                        style="position: absolute; bottom: -30px; right: -30px; background: white; padding: 1.5rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <div style="display: flex; align-items: center;">
+                            <div
+                                style="width: 50px; height: 50px; background: linear-gradient(135deg, #2e7d32, #388e3c); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+
+                            </div>
+                            <span style="color: #475569;">Data-Driven Insights</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section id="predictions" style="padding: 8rem 0; background: white; margin-top: 40px;">
+                <div class="container">
+                    <div class="section-header text-center" style="margin-bottom: 5rem;">
+                        <h2
+                            style="color: #0f172a; font-size: 3rem; font-weight: 700; margin-bottom: 1.5rem; font-family: 'Poppins', sans-serif;">
+                            Smart Recommendations Services
+                        </h2>
+                        <p style="color: #64748b; font-size: 1.2rem; max-width: 600px; margin: 0 auto;">
+                            Make data-driven decisions with our AI-powered prediction tools
+                        </p>
+                    </div>
+
+                    <div class="row">
+                        <!-- Crop Prediction Card -->
+                        <div class="col-lg-4 mb-4">
+                            <div class="prediction-card"
+                                style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%;">
+
+
+
+                                <img src="{{ url_for('static', filename='images/crop.jpeg') }}" alt=""
+                                    style="height: 350px ;width: 100%;object-fit:cover;">
+
+
+                                <div style="padding: 2rem;">
+                                    <h3
+                                        style="color: #0f172a; font-size: 1.5rem; margin-bottom: 1rem; font-family: 'Poppins', sans-serif;">
+                                        Crop Recommendation</h3>
+                                    <p style="color: #64748b; margin-bottom: 1.5rem; line-height: 1.6;">
+                                        Get AI-powered recommendations for the best crops to plant based on soil
+                                        conditions, climate, and historical data.
+                                    </p>
+                                    <div class="feature-list" style="margin-bottom: 2rem;">
+                                        <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                style="margin-right: 0.5rem;">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                            <span style="color: #64748b;">Soil Analysis</span>
+                                        </div>
+                                        <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                style="margin-right: 0.5rem;">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                            <span style="color: #64748b;">Climate Matching</span>
+                                        </div>
+                                        <div style="display: flex; align-items: center;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                style="margin-right: 0.5rem;">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                            <span style="color: #64748b;">Yield Forecasting</span>
+                                        </div>
+                                    </div>
+                                    <a href="{{ url_for('crop_recommend') }}" class="prediction-button"
+                                        style="display: inline-block; width: 100%; padding: 1rem; background: linear-gradient(135deg, #2e7d32, #388e3c); color: white; text-decoration: none; border-radius: 10px; text-align: center; font-weight: 600; transition: all 0.3s ease;">Start
+                                        Prediction</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fertilizer Recommendation Card -->
+                        <div class="col-lg-4 mb-4">
+                            <div class="prediction-card"
+                                style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%;">
+                                <img src="{{ url_for('static', filename='images/fr.avif') }}" alt=""
+                                style="height: 350px ;width: 100%;object-fit:cover;">
+                                <div style="padding: 2rem;">
+                                    <h3
+                                        style="color: #0f172a; font-size: 1.5rem; margin-bottom: 1rem; font-family: 'Poppins', sans-serif;">
+                                        Fertilizer Analysis</h3>
+                                    <p style="color: #64748b; margin-bottom: 1.5rem; line-height: 1.6;">
+                                        Optimize your fertilizer usage with precise recommendations based on soil
+                                        composition and crop requirements.
+                                    </p>
+                                    <div class="feature-list" style="margin-bottom: 2rem;">
+                                        <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                style="margin-right: 0.5rem;">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                            <span style="color: #64748b;">Nutrient Analysis</span>
+                                        </div>
+                                        <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                style="margin-right: 0.5rem;">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                            <span style="color: #64748b;">pH Balancing</span>
+                                        </div>
+                                        <div style="display: flex; align-items: center;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                style="margin-right: 0.5rem;">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                            <span style="color: #64748b;">Custom Blending</span>
+                                        </div>
+                                    </div>
+                                    <a href="{{ url_for('fertilizer_recommendation') }}" class="prediction-button"
+                                        style="display: inline-block; width: 100%; padding: 1rem; background: linear-gradient(135deg, #2e7d32, #388e3c); color: white; text-decoration: none; border-radius: 10px; text-align: center; font-weight: 600; transition: all 0.3s ease;">Analyze
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Disease Detection Card -->
+                        <div class="col-lg-4 mb-4">
+                            <div class="prediction-card"
+                                style="background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%;">
+                                <img src="{{ url_for('static', filename='images/lf.jpg') }}" alt=""
+                                style="height: 350px ;width: 100%;object-fit:cover;">
+                                <div style="padding: 2rem;">
+                                    <h3
+                                        style="color: #0f172a; font-size: 1.5rem; margin-bottom: 1rem; font-family: 'Poppins', sans-serif;">
+                                        Disease Detection</h3>
+                                    <p style="color: #64748b; margin-bottom: 1.5rem; line-height: 1.6;">
+                                        Early detection and treatment recommendations for crop diseases using advanced
+                                        image recognition.
+                                    </p>
+                                    <div class="feature-list" style="margin-bottom: 2rem;">
+                                        <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                style="margin-right: 0.5rem;">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                            <span style="color: #64748b;">Image Analysis</span>
+                                        </div>
+                                        <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                style="margin-right: 0.5rem;">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                            <span style="color: #64748b;">Quick Detection</span>
+                                        </div>
+                                        <div style="display: flex; align-items: center;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                style="margin-right: 0.5rem;">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                            <span style="color: #64748b;">Treatment Plans</span>
+                                        </div>
+                                    </div>
+                                    <a href="{{ url_for('disease_prediction') }}" class="prediction-button"
+                                        style="display: inline-block; width: 100%; padding: 1rem; background: linear-gradient(135deg, #2e7d32, #388e3c); color: white; text-decoration: none; border-radius: 10px; text-align: center; font-weight: 600; transition: all 0.3s ease;">Detect
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section
+            <section style="padding: 8rem 0; background: linear-gradient(135deg, #f8fafc, #f1f5f9);">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <h2
+                                style="color: #0f172a; font-size: 3rem; font-weight: 700; margin-bottom: 2rem; font-family: 'Poppins', sans-serif;">
+                                Ready to Transform Your Farming?
+                            </h2>
+                            <p style="color: #64748b; font-size: 1.2rem; margin-bottom: 3rem;">
+                                Join thousands of farmers who are already using our platform to improve their yields
+                            </p>
+                            <a href="#" class="contact-button"
+                                style="display: inline-block; padding: 1.2rem 3rem; background: linear-gradient(135deg, #2e7d32, #388e3c); color: white; text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(6,182,212,0.3);">Get
+                                Started Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+        </div>
+    </div>
+</section>
+
+
+<footer style="background: linear-gradient(135deg, #2d3436, #000000); color: white; padding: 2rem 0;">
+    <div class="container">
+        <div style="text-align: center;">
+            <h3 style="font-family: 'Poppins', sans-serif; margin-bottom: 1rem;">AgriTech: Advanced Farming with Machine
+                Learning</h3>
+
+            <p style="color: #b2bec3; margin-top: 1rem; font-family: 'Open Sans', sans-serif;">© 2024 All
+                Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+{% endblock body %}
